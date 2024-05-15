@@ -118,6 +118,7 @@ ol {
 }
 .search-form__textfield:focus {
   border: none;
+  outline: none;
 }
 .search-form__checkbox-list {
   display: flex;
@@ -197,6 +198,10 @@ ol {
   overflow: auto;
   block-size: 298px;
 }
+
+.content__list::-webkit-scrollbar{
+  display: none;
+}
 .content__list-item:not(:last-of-type) {
   margin-block-end: 35px;
 }
@@ -230,6 +235,10 @@ ol {
 }
 .content__video-card-description-container {
   flex-grow: 1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 206px;
 }
 .content__video-card-title {
   margin-block-end: 5px;
